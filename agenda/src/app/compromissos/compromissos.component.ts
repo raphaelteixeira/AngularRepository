@@ -24,8 +24,12 @@ export class CompromissosComponent implements OnInit {
       let dataCompromisso = new Date(compromisso.data);
       let dataAtual = new Date();
 
-      console.log("Compromisso: ", dataCompromisso);
-      console.log("Atual: ", dataAtual);
+      if (dataCompromisso.getTime() == dataAtual.getTime()) {
+        console.log("Compromisso: ", dataCompromisso.getTime());
+        console.log("Atual: ", dataAtual.getTime());
+
+
+      }
     }
   }
 
