@@ -1,12 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, enableProdMode } from '@angular/core';
-import { DxDataGridModule, DxButtonModule } from 'devextreme-angular';
 import { AppComponent } from './app.component';
 import { DadosService } from './dados.service';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { ContatosComponent } from './contatos/contatos.component';
 import { CompromissosComponent } from './compromissos/compromissos.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { DxDataGridModule, DxButtonModule } from 'devextreme-angular';
 
 if (!/localhost/.test(document.location.host)) {
   enableProdMode();
@@ -16,7 +17,8 @@ if (!/localhost/.test(document.location.host)) {
   declarations: [
     AppComponent,
     ContatosComponent,
-    CompromissosComponent
+    CompromissosComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

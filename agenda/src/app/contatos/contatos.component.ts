@@ -21,5 +21,6 @@ export class ContatosComponent implements OnInit {
 
   getContatos(): void {
     this.contatos = this.dadosService.getContatos();
+    
   }
 }

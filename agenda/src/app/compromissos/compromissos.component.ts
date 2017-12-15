@@ -19,6 +19,14 @@ export class CompromissosComponent implements OnInit {
 
   getCompromissos(): void {
     this.compromissos = this.dadosService.getCompromissos();
+
+    for (let compromisso of this.compromissos) {
+      let dataCompromisso = new Date(compromisso.data);
+      let dataAtual = new Date();
+
+      console.log("Compromisso: ", dataCompromisso);
+      console.log("Atual: ", dataAtual);
+    }
   }
 
 }

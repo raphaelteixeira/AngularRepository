@@ -3,17 +3,10 @@
     text-decoration: none;
     margin-top: 10px;
     display: inline-block;
-    background-color: #eee;
+    background-color: rgb(48, 82, 167);
     border-radius: 4px;
     margin-bottom: 20px;
     font-size: 30px;
-}
-
-.menu {
-    float: left;
-}
-
-.conteudo {
-    float: right;
+    color: white;
 }
 
