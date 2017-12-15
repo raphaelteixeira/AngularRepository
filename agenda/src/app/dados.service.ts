@@ -16,4 +16,5 @@ export class DadosService {
   getCompromissos(): Compromisso[] {
     return COMPROMISSOS;
   }
+
 }

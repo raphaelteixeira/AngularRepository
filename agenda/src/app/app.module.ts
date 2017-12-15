@@ -6,8 +6,9 @@ import { DadosService } from './dados.service';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { ContatosComponent } from './contatos/contatos.component';
 import { CompromissosComponent } from './compromissos/compromissos.component';
+import { AppRoutingModule } from './/app-routing.module';
 
-if(!/localhost/.test(document.location.host)) {
+if (!/localhost/.test(document.location.host)) {
   enableProdMode();
 }
 
@@ -20,7 +21,8 @@ if(!/localhost/.test(document.location.host)) {
   imports: [
     BrowserModule,
     DxDataGridModule,
-    DxButtonModule
+    DxButtonModule,
+    AppRoutingModule
   ],
   providers: [DadosService],
   bootstrap: [AppComponent]

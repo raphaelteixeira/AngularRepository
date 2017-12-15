@@ -1,5 +1,5 @@
 <div class="cabecalho">
-  <h1>CONTATOS</h1>
+  <h1>Contatos</h1>
 </div>
 <dx-data-grid title="CONTATOS" id="gridContainer" [dataSource]="contatos" keyExpr="id" [allowColumnReordering]="true" [allowColumnResizing]="true"
   [columnResizingMode]="columnResizingMode" [columnMinWidth]="50" [columnAutoWidth]="true">
@@ -16,7 +16,6 @@
 
   <dxo-paging [pageSize]="5"></dxo-paging>
 
-  <dxi-column dataField="id" [allowEditing]="false"></dxi-column>
   <dxi-column dataField="nome" caption="Nome">
     <dxi-validation-rule type="required" message="O campo 'Nome' é obrigatório!"></dxi-validation-rule>
   </dxi-column>
