@@ -1,4 +1,4 @@
-<div class="demo-container">
+<!--div class="demo-container">
   <div class="menu">
     <nav>
       <a class="menuLink" routerLink="/home">Home</a>
@@ -8,5 +8,15 @@
   </div>
   <div class="conteudo">
     <router-outlet></router-outlet>
+  </div>
+  </div>-->
+<div id="tabs">
+  <dx-tabs #apiTabs [dataSource]="tabs" [selectedIndex]="0" (onItemClick)="selectTab($event)"></dx-tabs>
+  <div class="content dx-fieldset">
+    <div class="dx-field">
+      <div class="dx-field-value-static left-aligned">
+        {{tabConteudo}}
+      </div>
+    </div>
   </div>
 </div>

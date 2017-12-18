@@ -2,7 +2,8 @@
   <h1>Contatos</h1>
 </div>
 <dx-data-grid title="CONTATOS" id="gridContainer" [dataSource]="contatos" keyExpr="id" [allowColumnReordering]="true" [allowColumnResizing]="true"
-  [columnResizingMode]="columnResizingMode" [columnMinWidth]="50" [columnAutoWidth]="true">
+  [columnResizingMode]="columnResizingMode" [columnMinWidth]="50" [columnAutoWidth]="true" [showColumnLines]="false" [showRowLines]="true"
+  [showBorders]="true" [rowAlternationEnabled]="true">
 
   <dxo-export [enabled]="true" fileName="Contatos" [allowExportSelectedData]="true"></dxo-export>
   <dxo-selection mode="multiple"></dxo-selection>

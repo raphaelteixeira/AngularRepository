@@ -7,7 +7,7 @@ import { ContatosComponent } from './contatos/contatos.component';
 import { CompromissosComponent } from './compromissos/compromissos.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
-import { DxDataGridModule, DxButtonModule } from 'devextreme-angular';
+import { DxDataGridModule, DxButtonModule, DxTabsModule, DxSelectBoxModule } from 'devextreme-angular';
 
 if (!/localhost/.test(document.location.host)) {
   enableProdMode();
@@ -24,7 +24,9 @@ if (!/localhost/.test(document.location.host)) {
     BrowserModule,
     DxDataGridModule,
     DxButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DxTabsModule,
+    DxSelectBoxModule
   ],
   providers: [DadosService],
   bootstrap: [AppComponent]

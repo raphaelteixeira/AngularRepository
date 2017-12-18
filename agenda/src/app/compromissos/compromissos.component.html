@@ -2,7 +2,8 @@
   <h1>Compromissos</h1>
 </div>
 <dx-data-grid id="gridContainer" [dataSource]="compromissos" keyExpr="id" [allowColumnReordering]="true" [allowColumnResizing]="true"
-  [columnResizingMode]="columnResizingMode" [columnMinWidth]="50" [columnAutoWidth]="true">
+  [columnResizingMode]="columnResizingMode" [columnMinWidth]="50" [columnAutoWidth]="true" [showColumnLines]="false" [showRowLines]="true"
+  [showBorders]="true" [rowAlternationEnabled]="true">
 
   <dxo-export [enabled]="true" fileName="Compromissos" [allowExportSelectedData]="true"></dxo-export>
   <dxo-selection mode="multiple"></dxo-selection>
@@ -30,5 +31,8 @@
   </dxi-column>
   <dxi-column dataField="local" caption="Local">
     <dxi-validation-rule type="required" message="O campo 'Local' é obrigatório!"></dxi-validation-rule>
+  </dxi-column>
+  <dxi-column dataField="horario" caption="Horário">
+    <dxi-validation-rule type="required" message="O campo 'Horário' é obrigatório!"></dxi-validation-rule>
   </dxi-column>
 </dx-data-grid>
