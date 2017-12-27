@@ -1,11 +1,11 @@
 import { Contato } from './contato';
-import { CONTATOS } from './lista-contatos';
+import { CONTATOS } from './dados';
 import { Injectable } from '@angular/core';
 import { Compromisso } from './compromisso';
-import { COMPROMISSOS } from './lista-compromissos';
+import { COMPROMISSOS } from './dados';
 import { Lembrete } from './lembrete';
-import { Tabs } from './lista-menu';
-import { Tab } from './lista-menu';
+import { Tabs } from './dados';
+import { Tab } from './dados';
 
 @Injectable()
 export class DadosService {

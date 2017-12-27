@@ -1,16 +1,16 @@
-<!--div class="demo-container">
-  <div class="menu">
-    <nav>
-      <a class="menuLink" routerLink="/home">Home</a>
-      <a class="menuLink" routerLink="/contatos">Contatos</a>
-      <a class="menuLink" routerLink="/compromissos">Compromissos</a>
-    </nav>
-  </div>
-  <div class="conteudo">
-    <router-outlet></router-outlet>
-  </div>
-  </div>-->
-<div id="tabs">
+<div class="demo-container">
+<div class="menu">
+  <nav>
+    <a class="menuLink" routerLink="/home">Home</a>
+    <a class="menuLink" routerLink="/contatos">Contatos</a>
+    <a class="menuLink" routerLink="/compromissos">Compromissos</a>
+  </nav>
+</div>
+<div class="conteudo">
+  <router-outlet></router-outlet>
+</div>
+</div>
+<!--<div id="tabs">
   <dx-tabs #apiTabs [dataSource]="tabs" [selectedIndex]="0" (onItemClick)="selectTab($event)"></dx-tabs>
   <div class="content dx-fieldset">
     <div class="dx-field">
@@ -19,4 +19,4 @@
       </div>
     </div>
   </div>
-</div>
+</div>-->

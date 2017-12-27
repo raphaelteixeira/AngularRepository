@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { DadosService } from './dados.service';
-import { Tab } from './lista-menu';
-import { Tabs } from './lista-menu';
+import { Tab } from './dados';
+import { Tabs } from './dados';
 
 @Component({
   selector: 'app-root',
